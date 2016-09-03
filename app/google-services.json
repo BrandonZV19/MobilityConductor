@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1014213525187",
+    "firebase_url": "https://mobilityconductor-80777.firebaseio.com",
+    "project_id": "mobilityconductor-80777",
+    "storage_bucket": "mobilityconductor-80777.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014213525187:android:378c5797174cd5c8",
+        "android_client_info": {
+          "package_name": "com.brandonzamudio.softtim.mobilityconductor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014213525187-gq92125j9l23d88qa24qqdpagoqtq0cu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brandonzamudio.softtim.mobilityconductor",
+            "certificate_hash": "086FAF6EFC2467CA1370CDB8E3D2BA92A488BF6B"
+          }
+        },
+        {
+          "client_id": "1014213525187-1fricb5o57b64c9u0visoahdtfv0gc48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW_P1Kn0uftpAx3Zn2oT99Zs1_dYcSaQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014213525187-1fricb5o57b64c9u0visoahdtfv0gc48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
