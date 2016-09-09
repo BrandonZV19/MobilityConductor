@@ -3,11 +3,11 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/na_balance"
             android:icon="@drawable/ic_account_balance_wallet_black_36dp"
             android:title="Balance" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_historial"
             android:icon="@drawable/ic_history_black_36dp"
             android:title="Historial de servicios" />
     </group>
@@ -15,15 +15,15 @@
 
     <group android:checkableBehavior="single">
             <item
-                android:id="@+id/nav_slideshow"
+                android:id="@+id/nav_eliminar"
                 android:icon="@drawable/ic_delete_black_36dp"
                 android:title="Eliminar registros" />
             <item
-                android:id="@+id/nav_manage"
+                android:id="@+id/nav_contraseña"
                 android:icon="@drawable/ic_lock_black_36dp"
                 android:title="Cambiar contraseña" />
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_salir"
                 android:icon="@drawable/ic_exit_to_app_black_36dp"
                 android:title="Salir" />
     </group>

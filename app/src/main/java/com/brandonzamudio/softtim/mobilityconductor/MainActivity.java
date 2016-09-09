@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -52,13 +53,15 @@ public class MainActivity extends AppCompatActivity
 
     String LOG_TAG="MainActivity";
     GoogleApiClient mGoogleApiClient;
-    long MIN_TIME_BW_UPDATES=1000 * 15;
-    boolean shouldEnd=false,resumed,isMapReady;
+    long MIN_TIME_BW_UPDATES=1000 * 5;
+    boolean shouldEnd=false,resumed;
     Location currentLocation;
-    isBetterLocation isBetter=new isBetterLocation();
     private GoogleMap mMap;
     LatLng currentLatLng;
     Marker currentMarker;
+    SharedPreferences preferences;
+    int idUnidad;
+    AlertDialog dialogiIniciaSesion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +77,30 @@ public class MainActivity extends AppCompatActivity
         toolbar.setLogo(R.drawable.logo);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
+
+        preferences=getApplicationContext().getSharedPreferences(String.valueOf(R.string.preferences),MODE_PRIVATE);
+
+        if (!preferences.contains("idUnidad")){
+            dialogiIniciaSesion=null;
+            dialogiIniciaSesion=new AlertDialog.Builder(MainActivity.this)
+                    .setTitle("¡UPS!")
+                    .setMessage("Por favor inicia sesión") //pasar a strings
+                    //Agregar codigo de error
+                    .setNeutralButton(getString(R.string.string_aceptar), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            shouldEnd = true;
+
+                            dialog.dismiss();
+                            Intent intentm = new Intent(MainActivity.this, LoginActivity.class);
+                            startActivity(intentm);
+                            finish();
+                        }
+                    })
+                    .show();
+        }else {
+            idUnidad=preferences.getInt(getString(R.string.p_id_unidad),0);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -139,7 +166,14 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_locate) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng,14));
+            return true;
+        }
+        if (id == R.id.action_panic){
+            return true;
+        }
+        if (id == R.id.action_refresh){
             return true;
         }
 
@@ -275,9 +309,11 @@ public class MainActivity extends AppCompatActivity
                 currentMarker=null;
                 currentMarker=mMap.addMarker(new MarkerOptions().position(currentLatLng));
             }
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng,14));
         }
+        PostLocation postLocation=new PostLocation();
+        postLocation.post(currentLocation,idUnidad);
     }
+
 
     @Override
     protected void onResume() {
@@ -334,6 +370,7 @@ public class MainActivity extends AppCompatActivity
                     public void onClick(DialogInterface dialog, int which) {
 
                         //Modificar o NO modificar preferencias para que VULEVA a inicia sesion
+                        //Reiniciar actividad
 
                         shouldEnd = true;
 
