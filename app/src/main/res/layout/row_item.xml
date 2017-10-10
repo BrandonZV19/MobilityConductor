@@ -1,0 +1,103 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/cdco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Colonia de origen:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#2c2c2c"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sdFecha" />
+
+
+    <TextView
+        android:id="@+id/sdDestino"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="---- ---- ---- ----"
+        android:textColor="#2c2c2c"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/sdOrigen"
+        app:layout_constraintRight_toLeftOf="@+id/sdtvid"
+        app:layout_constraintTop_toBottomOf="@+id/cdcd" />
+
+    <TextView
+        android:id="@+id/cdcd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:text="Colonia de destino:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#2c2c2c"
+        app:layout_constraintLeft_toLeftOf="@+id/sdDestino"
+        app:layout_constraintTop_toBottomOf="@+id/sdFecha" />
+
+    <TextView
+        android:id="@+id/sdOrigen"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+
+        android:text="---- ---- ---- ----"
+        android:textColor="#2c2c2c"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdco" />
+
+    <TextView
+        android:id="@+id/sdIdServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:text="234"
+        android:textColor="#2c2c2c"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sdFecha" />
+
+    <TextView
+        android:id="@+id/sdtvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/sdIdServ"
+        android:layout_toStartOf="@+id/sdIdServ"
+        android:text=" ID "
+        android:textColor="#2c2c2c"
+        app:layout_constraintRight_toLeftOf="@+id/sdIdServ"
+        app:layout_constraintTop_toBottomOf="@+id/sdFecha" />
+
+    <TextView
+        android:id="@+id/sdFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="20/20/2020 17:55"
+        android:textStyle="bold"
+        android:textColor="#2c2c2c"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+

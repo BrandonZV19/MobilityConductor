@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/actual_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/actual_content"
+                android:layout_alignLeft="@id/actual_content"
+                android:layout_alignStart="@id/actual_content"
+                android:layout_alignRight="@id/actual_content"
+                android:layout_alignEnd="@id/actual_content"
+                android:layout_alignTop="@+id/actual_content"
+                android:scaleType="fitXY"
+                android:background="@drawable/bw1" />
+
+            <ImageView
+                android:id="@+id/vLugarImagen"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:background="#64dd17"
+                android:cropToPadding="true"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLugarTitulo"
+                app:srcCompat="@drawable/ic_bubble_chart_white_36dp"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLugarDeescripcion"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <TextView
+                android:id="@+id/vLugarDeescripcion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:gravity="fill_horizontal"
+                android:padding="10sp"
+                android:text="No disponible"
+
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#090f4c"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLugarImagen"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Dirección:"
+
+                android:textColor="#2c2f46"
+                app:layout_constraintLeft_toLeftOf="@+id/vLugarDeescripcion"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/vLugarHorario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="8dp"
+                android:gravity="fill_horizontal"
+                android:padding="5sp"
+                android:text="No disponible"
+
+                android:layout_marginBottom="10sp"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#090f4c"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/textView6"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/vLugarDireccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginStart="8dp"
+                android:gravity="fill_horizontal"
+                android:padding="5sp"
+                android:text="No disponible"
+
+                android:layout_marginBottom="10sp"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#090f4c"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/textView7"
+                app:layout_constraintRight_toLeftOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/vLugarTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="las Tarascas"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#12194f"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Horario:"
+
+                android:textColor="#2c2f46"
+                app:layout_constraintLeft_toRightOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
