@@ -15,15 +15,9 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
 
-    Clave temporal temrinada en -TUJ5ZUH12a46V8nox-vTc creada con cuenta de brandon.azv@gmail.com
-    en inicializacion de reestructuracion
-
-    16/agosto/2016
-    Android key terminada en _ycMysLDNEIahv_JVU cambiada con softtim.development@gmail.com
-
     -->
 
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyAWdXairxN--NojX_ycMysLDNEIahv_JVU
+        AIzaSyDZJA1XZvw83j_gEyHaPENWsXAHujfWP_0
     </string>
 </resources>

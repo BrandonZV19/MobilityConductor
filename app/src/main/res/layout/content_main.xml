@@ -5,8 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.brandonzamudio.softtim.mobilityconductor.MainActivity"
+    tools:context="com.softtim.mobilityconductor.MainActivity"
     tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:text="Estado . . ."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEstado"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        style="?android:attr/textViewStyle"
+        android:layout_below="@+id/tvDenue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -14,21 +29,101 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.brandonzamudio.softtim.mobilityconductor.MainActivity"
-        android:layout_above="@+id/button" />
+        android:layout_height="10sp"
+        android:layout_above="@+id/bStatus"
+        android:layout_below="@id/tvEstado"
+        tools:context="com.brandonzamudio.softtim.mobilityconductor.com.softtim.mobilityconductor.MainActivity" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="libre"
-        android:id="@+id/button"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/claxon"
+        android:layout_below="@+id/bCancelar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
-        android:background="@color/colorPrimary" />
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/bLlego" />
+
+    <Button
+        android:id="@+id/bCancelar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvEstado"
+        android:layout_margin="5dp"
+        android:background="#d50000"
+        android:text="Cancelar servicio"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/bPanic"
+        android:layout_width="40sp"
+
+
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bLlego"
+        android:layout_alignStart="@+id/bLlego"
+        android:layout_below="@+id/bLlego"
+        android:layout_marginLeft="4sp"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:cropToPadding="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/siren" />
+
+    <ImageButton
+        android:id="@+id/goNavigation"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="5sp"
+        android:layout_marginStart="5sp"
+        app:srcCompat="@drawable/navigation"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/bPanic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/tvDenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:drawableRight="@drawable/ic_search_white_24dp"
+        android:layout_alignParentTop="true"
+        android:background="#424242"
+        android:hint="Buscar..."
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>

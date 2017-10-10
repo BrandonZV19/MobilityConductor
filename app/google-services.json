@@ -8,18 +8,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1014213525187:android:378c5797174cd5c8",
+        "mobilesdk_app_id": "1:1014213525187:android:840f39f65c9bf812",
         "android_client_info": {
-          "package_name": "com.brandonzamudio.softtim.mobilityconductor"
+          "package_name": "com.softtim.mobilityconductor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1014213525187-gq92125j9l23d88qa24qqdpagoqtq0cu.apps.googleusercontent.com",
+          "client_id": "1014213525187-o5440q4vmc385gup9ndp6s4ij27kkj6d.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.brandonzamudio.softtim.mobilityconductor",
-            "certificate_hash": "086FAF6EFC2467CA1370CDB8E3D2BA92A488BF6B"
+            "package_name": "com.softtim.mobilityconductor",
+            "certificate_hash": "086faf6efc2467ca1370cdb8e3d2ba92a488bf6b"
           }
         },
         {
@@ -29,7 +29,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAW_P1Kn0uftpAx3Zn2oT99Zs1_dYcSaQM"
+          "current_key": "AIzaSyD7O_dy_sMikccDzBI1tSXXvqG3KgdBnzE"
         }
       ],
       "services": {

@@ -1,16 +1,19 @@
 <resources>
     <string name="app_name">Mobility Conductor</string>
-    <string name="version">mc1.0</string>
+    <string name="version">mc2.0</string>
     <string name="iniciar_sesion">Iniciar Sesión</string>
     <string name="Usuario">Usuario</string>
     <string name="Contraseña">Contraseña</string>
     <string name="imagen">Imagen</string>
     <string name="title_activity_main">Mobility</string>
 
+    <string name="imagenesLugaresURL">http://softtim.mx/canaco/assets/img/lugares/</string>
+
     <string name="string_cancelar">Cancelar</string>
     <string name="string_continuar">Continuar</string>
     <string name="string_aceptar">Aceptar</string>
     <string name="ip">200.77.139.197</string>
+    <string name="mainURL">http://softtim.mx/mobilityV2</string>
     <string name="preferences">MobilityConductor</string>
     <string name="accediendo">Accediendo</string>
     <string name="campos_vacio">Algun campo esta vacio</string>
@@ -19,11 +22,12 @@
 
     <string name="p_id_conductor">idConductor</string>
     <string name="p_id_unidad">idUnidad</string>
-    <string name="p_ocupado">lOcupado</string>
     <string name="p_nick">nick</string>
     <string name="p_pass_temp">lPasswordTemporal</string>
     <string name="p_id_cel">idCelular</string>
     <string name="p_username">username</string>
+    <string name="p_pass">password</string>
+    <string name="p_tipo_unidad">tipoUnidad</string>
     <string name="p_s_confirmado">lConfirmadoConductor</string>
     <string name="p_s_cancelado">lCancelado</string>
     <string name="p_s_apellido_pat">aApellidoPatUsuario</string>
@@ -41,14 +45,36 @@
     <string name="p_s_fecha">fFechaHoraSolicitud</string>
     <string name="p_s_id">idServicio</string>
     <string name="p_s_lat_origen">dLatitudOrigen</string>
+    <string name="p_s_dir_origen">aDireccionOrigen</string>
+    <string name="p_s_dir_destino">aDireccionDestino</string>
+    <string name="p_s_col_origen">aColoniaOrigen</string>
+    <string name="p_s_col_destino">aColoniaDestino</string>
 
+    <string name="current_service">currentService</string>
+    <string name="current_status">currentStatus</string>
+    <string name="current_confirmado">currentConfirmado</string>
+    <string name="current_llego_origen">currentLLegadaOrigen</string>
+    <string name="current_cancelado">currentCancelado</string>
+    <string name="current_cancelado_v">currentCanceladoV</string>
+    <string name="current_ocupado">currentOcupado</string>
+    <string name="current_calificado">currentCalificado</string>
+    <string name="current_costo_usuario">currentCostoUsuario</string>
+    <string name="current_costo_conductor">currentCostoConductor</string>
+    <string name="current_costo_sugerido">currentCostoSugerido</string>
+    <string name="current_saldo">currentSaldo</string>
+    <string name="current_acreditado_pp">currentAcreditadoPP</string>
+    <string name="current_costo_pp">currentCostoPP</string>
+    <string name="current_solicitado_pp">currentSolicitadoPP</string>
+    <string name="current_alertas">currentAlertas</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_locate">Ubicar</string>
     <string name="action_panic">Panico</string>
+    <string name="action_services">Servicios Disponibles</string>
     <string name="action_refresh">Refrescar</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_servicios">Servicios</string>
 </resources>

@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.brandonzamudio.softtim.mobilityconductor.LoginActivity"
+    tools:context="com.brandonzamudio.softtim.mobilityconductor.com.softtim.mobilityconductor.LoginActivity"
     tools:showIn="@layout/activity_login">
 
     <Space
@@ -23,13 +23,13 @@
         android:id="@+id/space" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
         android:layout_above="@+id/space"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/premier"
-        android:contentDescription="@string/imagen" />
+        android:contentDescription="@string/imagen"
+        android:src="@drawable/logo512c" />
 
     <EditText
         android:layout_width="wrap_content"

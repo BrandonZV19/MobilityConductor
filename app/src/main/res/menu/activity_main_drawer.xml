@@ -3,9 +3,17 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_servicios"
+            android:icon="@drawable/ic_directions_walk_black_36dp"
+            android:title="Servicios disponibles" />
+        <item
             android:id="@+id/nav_balance"
             android:icon="@drawable/ic_account_balance_wallet_black_36dp"
             android:title="Balance" />
+        <item
+            android:id="@+id/nav_alertas"
+            android:icon="@drawable/ic_notifications_active_black_36dp"
+            android:title="Alertas de panico" />
         <item
             android:id="@+id/nav_historial"
             android:icon="@drawable/ic_history_black_36dp"
@@ -14,6 +22,11 @@
 
 
     <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_con_blue"
+                android:icon="@drawable/ic_mr_button_connected_00_light"
+                android:title="Reconectar bluetooth" />
+
             <item
                 android:id="@+id/nav_eliminar"
                 android:icon="@drawable/ic_delete_black_36dp"
@@ -29,3 +42,5 @@
     </group>
 
 </menu>
+
+
