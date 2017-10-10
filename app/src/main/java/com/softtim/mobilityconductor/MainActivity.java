@@ -97,6 +97,8 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback, com.google.android.gms.location.LocationListener, GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
+    //Cambio de prueba
+
     String LOG_TAG = "UMainActivity";
     String timeAprox;
     HashMap<Integer,Marker> markerHashMap;
